@@ -8,11 +8,11 @@
 | High class imbalance | ~8% defect rate | Data generation script logs | PASS |
 | Missing values | 5% missingness tied to sensor health | Script logic & output logs | PASS |
 | Correlated anomalies | Thermal, Pressure, Equipment degradation | Script logic injecting anomalies to 5% rows | PASS |
-| Data cleaning | | | PENDING (M2) |
-| Sampling/imbalance handling | | | PENDING (M2) |
-| Scaling | | | PENDING (M2) |
-| Feature engineering | | | PENDING (M2) |
-| EDA visualization | | | PENDING (M2) |
+| Data cleaning | `src/features/preprocessing.py` | SimpleImputer used in Pipeline | PASS |
+| Sampling/imbalance handling | `src/features/preprocessing.py` | SMOTE implemented via imblearn Pipeline | PASS |
+| Scaling | `src/features/preprocessing.py` | RobustScaler used for numericals | PASS |
+| Feature engineering | `src/features/preprocessing.py` | Custom `FeatureEngineer` transformer | PASS |
+| EDA visualization | `src/features/eda.py` | Plots saved in `reports/figures/` | PASS |
 | Two ML algorithms | | | PENDING (M3) |
 | Domain-specific metrics | | | PENDING (M3) |
 | Hyperparameter tuning | | | PENDING (M3) |

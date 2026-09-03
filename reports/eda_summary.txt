@@ -1,0 +1,18 @@
+EDA and Data Quality Analysis Summary
+======================================
+
+Total Observations: 25000
+Defect Rate: 8.33%
+
+Missing Values:
+ - chamber_pressure: 349 (1.40%)
+ - gas_flow_rate: 336 (1.34%)
+ - plasma_power: 351 (1.40%)
+ - vibration_level: 348 (1.39%)
+ - ambient_humidity: 232 (0.93%)
+
+Key Observations:
+- Class Imbalance: The target variable 'defective' is highly imbalanced, requiring strategies like SMOTE or Class Weighting during modeling.
+- Correlated Anomalies: High positive correlations are observed between certain thermal features (e.g., chamber_temperature, ambient_temperature) indicating synthetic anomalies.
+- Missingness Mechanism: Missing values in chamber_pressure and gas_flow_rate appear correlated with each other and likely tied to sensor health issues rather than being MCAR.
+- Defect Relationship: Boxplots show that extreme values in chamber_temperature and vibration_level are strongly associated with defective runs.
