@@ -17,7 +17,7 @@
 | Domain-specific metrics | `src/models/train_model.py` | PR-AUC, Recall, Precision used | PASS |
 | Hyperparameter tuning | `src/models/train_model.py` | RandomizedSearchCV applied to XGBoost | PASS |
 | Model serialization | `src/models/train_model.py` | `models/final_defect_prediction_pipeline.joblib` created | PASS |
-| REST API | | | PENDING (M4) |
-| Input validation | | | PENDING (M4) |
-| 5+ unit tests | | | PENDING (M4) |
+| REST API | `backend/app/main.py` | FastAPI application with `/health` and `/predict` | PASS |
+| Input validation | `backend/app/schemas.py` | Pydantic model for strict schema validation | PASS |
+| 5+ unit tests | `backend/tests/test_api.py` | 6 tests using TestClient and pytest | PASS |
 | Interactive dashboard | | | PENDING (M5) |
