@@ -13,10 +13,10 @@
 | Scaling | `src/features/preprocessing.py` | RobustScaler used for numericals | PASS |
 | Feature engineering | `src/features/preprocessing.py` | Custom `FeatureEngineer` transformer | PASS |
 | EDA visualization | `src/features/eda.py` | Plots saved in `reports/figures/` | PASS |
-| Two ML algorithms | | | PENDING (M3) |
-| Domain-specific metrics | | | PENDING (M3) |
-| Hyperparameter tuning | | | PENDING (M3) |
-| Model serialization | | | PENDING (M3) |
+| Two ML algorithms | `src/models/train_model.py` | Logistic Regression & XGBoost evaluated | PASS |
+| Domain-specific metrics | `src/models/train_model.py` | PR-AUC, Recall, Precision used | PASS |
+| Hyperparameter tuning | `src/models/train_model.py` | RandomizedSearchCV applied to XGBoost | PASS |
+| Model serialization | `src/models/train_model.py` | `models/final_defect_prediction_pipeline.joblib` created | PASS |
 | REST API | | | PENDING (M4) |
 | Input validation | | | PENDING (M4) |
 | 5+ unit tests | | | PENDING (M4) |
