@@ -1,0 +1,38 @@
+[
+    {
+        "Test": "Valid request",
+        "Purpose": "Ensure valid payloads return 200 and schema matches",
+        "Expected Result": "200 OK",
+        "Actual Result": "PASS"
+    },
+    {
+        "Test": "Missing field",
+        "Purpose": "Ensure missing fields return 422",
+        "Expected Result": "422 Unprocessable Entity",
+        "Actual Result": "PASS"
+    },
+    {
+        "Test": "Invalid type",
+        "Purpose": "Ensure passing strings to float fields fails",
+        "Expected Result": "422 Unprocessable Entity",
+        "Actual Result": "PASS"
+    },
+    {
+        "Test": "Invalid category/range",
+        "Purpose": "Ensure out-of-bounds metrics (e.g. humidity > 100) fail",
+        "Expected Result": "422 Unprocessable Entity",
+        "Actual Result": "PASS"
+    },
+    {
+        "Test": "Health endpoint",
+        "Purpose": "Ensure service and model load health check",
+        "Expected Result": "200 OK",
+        "Actual Result": "PASS"
+    },
+    {
+        "Test": "Threshold logic",
+        "Purpose": "Ensure probabilities route to correct risk bucket",
+        "Expected Result": "Accurate Risk Level",
+        "Actual Result": "PASS"
+    }
+]

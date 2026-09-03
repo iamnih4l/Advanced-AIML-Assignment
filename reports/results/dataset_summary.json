@@ -1,0 +1,10 @@
+{
+    "total_wafers": 25000,
+    "defective_wafers": 2082,
+    "normal_wafers": 22918,
+    "defect_rate_percentage": 8.33,
+    "total_features": 27,
+    "missing_values_count": 1616,
+    "numerical_features_count": 19,
+    "categorical_features_count": 8
+}
