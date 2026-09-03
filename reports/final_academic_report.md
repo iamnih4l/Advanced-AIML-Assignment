@@ -203,8 +203,14 @@ React + TypeScript + Vite.
 ## 7.2 Design Goals
 A "Premium Control Room" aesthetic using Vanilla CSS, Glassmorphism, and dark-mode tones.
 
-## 7.3 Manufacturing Quality Overview
-Real-time indicator of the ML Engine status (Online/Offline).
+## 7.3 Final User Interface (UI)
+The dashboard provides a "Premium Control Room" aesthetic using Vanilla CSS, Glassmorphism, and dark-mode tones.
+
+Below is the initial state of the interactive telemetry dashboard:
+![Interactive Telemetry Dashboard - Initial State](/C:/Users/nihal/OneDrive/Desktop/Advanced-AIML-Assignment/reports/assets/ui_dashboard_initial.png)
+
+Below is the dashboard after processing a prediction, demonstrating a High Risk Threshold:
+![Prediction Results demonstrating a High Risk Threshold](/C:/Users/nihal/OneDrive/Desktop/Advanced-AIML-Assignment/reports/assets/ui_dashboard_result.png)
 
 ## 7.4 Process Monitoring
 26 inputs tracking all critical telemetry.

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Activity, AlertTriangle, CheckCircle, Cpu, Loader2, Server, Settings2 } from 'lucide-react';
-import { checkHealth, predictDefect, PredictionRequest, PredictionResponse } from './api';
+import { checkHealth, predictDefect, type PredictionRequest, type PredictionResponse } from './api';
 
 const DEFAULT_WAFER: PredictionRequest = {
   chamber_temperature: 205.5,
