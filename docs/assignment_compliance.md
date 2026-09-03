@@ -20,4 +20,6 @@
 | REST API | `backend/app/main.py` | FastAPI application with `/health` and `/predict` | PASS |
 | Input validation | `backend/app/schemas.py` | Pydantic model for strict schema validation | PASS |
 | 5+ unit tests | `backend/tests/test_api.py` | 6 tests using TestClient and pytest | PASS |
-| Interactive dashboard | | | PENDING (M5) |
+| Interactive dashboard | `frontend/src/App.tsx` | React app with real-time risk prediction | PASS |
+| Data input form | `frontend/src/App.tsx` | Comprehensive telemetry input fields | PASS |
+| Risk visualization | `frontend/src/index.css` | Color-coded glassmorphism alerts | PASS |
