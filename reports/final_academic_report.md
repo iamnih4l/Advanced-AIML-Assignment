@@ -198,7 +198,7 @@ Tested via `pytest` and `TestClient` (`api_test_results.json`).
 # 7. Milestone 5 — Interactive Front-End Dashboard Deployment
 
 ## 7.1 Dashboard Architecture
-React + TypeScript + Vite.
+The operator-facing dashboard was built using React, TypeScript, and Vite, communicating with the FastAPI backend over a typed HTTP client layer.
 
 ## 7.2 Design Goals
 A "Premium Control Room" aesthetic using Vanilla CSS, Glassmorphism, and dark-mode tones.
@@ -236,7 +236,7 @@ User submits telemetry -> Loading Spinner -> API processes pipeline -> Dashboard
 ---
 
 # 8. Results & Discussion
-The system successfully synthesized 25,000 wafers, identified 8.3% as defective, cleanly handled missing data inside a SMOTE pipeline, and deployed an optimized Logistic Regression model that achieved a PR-AUC of nearly 0.40 on a highly complex imbalanced dataset. The API achieved 100% test passage across 6 discrete endpoint validations.
+The system successfully synthesized 25,000 wafers, identified 8.33% (2,083 wafers) as defective, cleanly handled 5% missing data inside a SMOTE pipeline without leakage, and deployed an optimized Logistic Regression model that achieved a PR-AUC of 0.3994 and a Recall of 0.5852 on a highly complex imbalanced dataset. The API achieved 100% test passage across 6 discrete endpoint validations.
 
 ---
 

@@ -1,4 +1,6 @@
-\documentclass[12pt, a4paper]{article}
+import os
+
+latex_content = r"""\documentclass[12pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
@@ -159,7 +161,7 @@ Because the missingness was injected independently of both the feature values an
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{figures/missing_values_heatmap.png}
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{../figures/missing_values_heatmap.png}
     \caption{Missing-value heatmap across the three affected sensor columns}
     \label{fig:missing_value_heatmap}
 \end{figure}
@@ -169,7 +171,7 @@ Heavy right-tails were observed in the vibration data for defective wafers speci
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{figures/feature_distributions.png}
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{../figures/feature_distributions.png}
     \caption{Distributions of vibration level and chamber pressure, segmented by defect label}
     \label{fig:outlier_boxplots}
 \end{figure}
@@ -179,7 +181,7 @@ The resulting 91.6\% (Normal) to 8.3\% (Defect) class ratio confirmed that raw a
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{figures/class_distribution.png}
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{../figures/class_distribution.png}
     \caption{Class distribution bar chart (Normal vs. Defect)}
     \label{fig:class_imbalance_chart}
 \end{figure}
@@ -207,7 +209,7 @@ A broader set of exploratory visualizations---including correlation heatmaps, pa
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{figures/correlation_matrix.png}
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{../figures/correlation_matrix.png}
     \caption{Feature correlation heatmap across engineered and raw features}
     \label{fig:correlation_heatmap}
 \end{figure}
@@ -373,7 +375,12 @@ The following figures demonstrate the real-time application in operation, from i
     \label{fig:ui_dashboard_result}
 \end{figure}
 
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=0.4\textheight,keepaspectratio]{assets/ui_dashboard_low_risk.png}
+    \caption{Prediction Results demonstrating a Low Risk / Normal outcome}
+    \label{fig:ui_dashboard_low_risk}
+\end{figure}
 
 \subsection{Prediction Result Visualization}
 Giant typography displays the exact defect probability percentage, paired with dynamic color coding (Green / Amber / Red) that mirrors the Risk Level returned by the API, allowing an operator to assess wafer risk at a glance without reading raw numeric output.
@@ -428,3 +435,9 @@ This project delivered a complete, end-to-end machine learning system for predic
 
 % ============================================================
 \end{document}
+"""
+
+with open(r"c:\Users\nihal\OneDrive\Desktop\Advanced-AIML-Assignment\reports\final_academic_report.tex", "w", encoding="utf-8") as f:
+    f.write(latex_content)
+
+print("Latex file fully generated with correct \includegraphics commands and expanded text.")
